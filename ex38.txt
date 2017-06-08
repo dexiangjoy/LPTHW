@@ -1,0 +1,26 @@
+解释 mystuff.append('hello') 是怎么运行的，它其实是 append(mystuff, 'hello')
+Here's how it works:
+1：Python sees you mentioned mystuff and looks up that variable. It might have to look backward to see if you created with =,
+      if it is a function argument, or if it's a global variable. Either way it has to find the mystuff first.
+2：Once it finds mystuff it reads the . (period) operator and starts to look at variables that are a part of mystuff. Since mystuff is a list,
+       it knows that mystuff has a bunch of functions.
+3：It then hits append and compares the name to all the names that mystuff says it owns. If append is in there (it is) then Python grabs that to use.
+4：Next Python sees the ( (parenthesis) and realizes, "Oh hey, this should be a function." At this point it calls (runs, executes) the function just like normally,
+      but instead it calls the function with an extra argument.
+5：That extra argument is ... mystuff! I know, weird, right? But that's how Python works so it's best to just remember it and assume that's the result.
+      What happens, at the end of all this, is a function call that looks like: append(mystuff, 'hello') instead of what you read which is mystuff.append('hello').
+
+关于列表
+1："An ordered list"  ：Yes, deck of cards is in order with a first, and a last.
+2："of things you want to store" ：Yes, cards are things I want to store.
+3："and access randomly" ：Yes, I can grab a card from anywhere in the deck.
+4："or linearly" ：Yes, if I want to find a specific card I can start at the beginning and go in order.
+5："by an index" ：Almost, since with a deck of cards if I told you to get the card at index 19 you'd have to count
+        until you found that one. In our Python lists the computer can just jump right to any index you give it.
+
+什么时候使用列表
+You use a list whenever you have something that matches the list data structure's useful features:
+
+1：If you need to maintain order. Remember, this is listed order, not sorted order. Lists do not sort for you.
+2：If you need to access the contents randomly by a number. Remember, this is using cardinal numbers starting at 0.
+3：If you need to go through the contents linearly (first to last). Remember, that's what for-loops are for.

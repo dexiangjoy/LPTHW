@@ -1,0 +1,24 @@
+这个练习是总结
+ex1： print 语句，python2使用中文要加上# -*- coding: utf-8 -*-
+ex2： ‘#’ 放在井号后面的代码会被忽略，字符串用引号包裹，print语言可直接打印字符串
+ex3：python2做除法运算要得到精确结果需使用浮点数float，比如2.0/5 ,结果是2.5
+ex4：引入变量的概念，‘=’ 等号的作用是给左边的变量赋值，并且可以在新变量中通过使用已赋值的变量做数学运算的方式再赋值，打印变量不需要加引号
+ex5：介绍 python format ，常用的：%d %s %r  使用格式 print "I have a %r ,I have a %r" % ('pen', 'apple') 或者print "You {}, I  {}".format('jump', 'jump')
+          后面的替换文本只能是字符串，或者变量，两个变量以上是为元组tuple，用括号括起来。round()函数可取小数点
+ex6：变量使用.format()时不用加引号，字符串需要加。连接字符串用加号，可把布尔值赋值给变量
+ex7：重复打印字符串使用*号，如果想把两个print在一行打印，则在print末尾加上逗号
+ex8：理解%s与%r的区别。
+ex9：换行键\n , print 后加 """ ，可打印多行文字。
+ex10：用反斜线字符“\”作为转义字符，来表示那些不可打印的ASCII控制符，ex10集合了常见的转义字符
+ex11： 使用raw_input，和user交互，从user获取信息
+ex12：python -m pydoc ××× 可获取帮助信息
+ex13：from sys import argv , sys is a package, and this phrase just says to get the argv feature from that package.,
+           使用script, first, second = argv  # "unpacks" argv ,  it gets assigned  variables on the left in order. 执行时python ex13.py first 2nd
+ex14：结合使用raw_input和argv
+ex15：读写文件，先txt=open(filename),再txt.read().ex15_sample是怎么在命令行里使用读写功能
+ex16： 新用法target = open(filename, 'w')，再加上r, r+, w+等等
+ex17：复制文件的内容给另一个文件 ，open(argv[2], 'w').write( open(argv[1]).read())
+ex18： def 定义一个function, 以及 function 检查列表
+ex19：function 里做运算，自己也写了一个
+ex20：function 和 read() seek() 结合
+ex21:   用def 定义 加减乘除 ，例如what = age + height - weight * iq / 3 转换为 what = age + height - weight * iq / 2
