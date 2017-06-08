@@ -1,0 +1,3 @@
+# LPTHW
+learnpythonthehardway
+今年年初开始学习这本书，学到第40章节时就跑去学Linux了
